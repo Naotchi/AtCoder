@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ "$#" -ne 1 ];then
+    echo "usage:$0 [contest ID]"
+    exit 1
+fi  
+acc new $1

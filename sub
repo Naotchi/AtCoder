@@ -1,0 +1,5 @@
+#!/bin/sh
+file=$(ls | grep *.cpp)
+mv $file main.cpp
+acc s
+mv main.cpp $file

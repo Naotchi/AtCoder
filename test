@@ -1,0 +1,6 @@
+#!/bin/sh
+directory=$(pwd | rev | cut -c 1)
+mv ${directory}.cpp main.cpp
+g++ main.cpp
+oj t -d tests
+mv main.cpp ${directory}.cpp
